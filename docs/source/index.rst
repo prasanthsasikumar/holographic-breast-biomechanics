@@ -14,7 +14,9 @@ This documentation outlines ...
 
    contributors
    introduction
-   tutorial
+   beginner
+   intermediate
+   advanced
 
 Indices and tables
 ==================
