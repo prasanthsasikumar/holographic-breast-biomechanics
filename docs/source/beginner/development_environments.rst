@@ -4,11 +4,14 @@ Integrated development environments
 
 Directory setup
 ===============
-mkdir -p $HOME/opt/ # Location to add the different codes that you will be working.
-mkdir -p $HOME/usr/ # Location where general programs can be installed, e.g. pycharm.
-mkdir -p $HOME/scripts/ # Location of your one off scripts
-mkdir -p $HOME/logs/ # Location of logs from your programs
-mkdir -p $HOME/tmp/ # Location for temporary storage of files/testing bits of code etc
+
+.. code-block:: bash
+
+  mkdir -p $HOME/opt/ # Location to add the different codes that you will be working.
+  mkdir -p $HOME/usr/ # Location where general programs can be installed, e.g. pycharm.
+  mkdir -p $HOME/scripts/ # Location of your one off scripts
+  mkdir -p $HOME/logs/ # Location of logs from your programs
+  mkdir -p $HOME/tmp/ # Location for temporary storage of files/testing bits of code etc
 
 PyCharm
 =======
