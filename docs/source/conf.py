@@ -17,9 +17,9 @@
 
 # -- Project information -----------------------------------------------------
 
-project = 'Your project'
-copyright = '2020, Your name'
-author = 'Your name'
+project = 'Software development guide'
+copyright = '2020, Auckland Bioengineering Institute'
+author = 'Auckland Bioengineering Institute'
 
 
 # -- General configuration ---------------------------------------------------

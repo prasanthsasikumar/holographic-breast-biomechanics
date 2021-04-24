@@ -118,7 +118,7 @@ After editing the file, save and exit. The updated path will then be available w
 
 Identifying running processes
 -----------------------------
-Use the `top` command to list the running programs (also known as a process). Each running process has an associated process id.
+Use the `top` command to list the running programs (also known as a process). Each running process has an associated process id (PID).
 
 .. image:: terminal/top.png
    :width: 600
@@ -126,6 +126,7 @@ Use the `top` command to list the running programs (also known as a process). Ea
 Press the :kbd:`c` button to see the full path to the program. To quit the `top` process viewer, press the :kbd:`q` button.
 
 Alternatively you can list processes that have been created by a specific user (e.g. user psam012 as shown below):
+
 .. code-block:: bash
 
    top -u psam012
@@ -141,6 +142,7 @@ Where the `search_term` could be for example `pycharm.sh`. The process id is sho
 Killing processes
 -----------------
 You can kill a process manually using the following command:
+
 .. code-block:: bash
 
    kill -9 process_id
