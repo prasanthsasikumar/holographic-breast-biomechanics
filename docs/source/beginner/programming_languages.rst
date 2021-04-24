@@ -1,21 +1,21 @@
-==========================
-Programming best practices
-==========================
+=====================
+Programming languages
+=====================
 
 Overview
 ========
-
+This section describes commonly used programming languages used in research projects.
 
 Python
 ======
-The python programming language is used in the majority of software at ABI.
+The python programming language is recommended for research projects.
 
 Learning python
 ---------------
 Here are a few tools/resources that can help you learn the python programming language:
 
-- Pycharm Edu includes interactive tutorials on how to program with python.
-- CodeCombat helps you learn coding with python while playing a real game (sign up as a student. Select ‘individual account’ when prompted).
+- `Pycharm Edu <https://www.jetbrains.com/pycharm-edu/>`_ includes interactive tutorials on how to program with python.
+- `CodeCombat <https://codecombat.com>`_ helps you learn coding with python while playing a real game (sign up as a student. Select ‘individual account’ when prompted).
 
 Python style guide
 ------------------
