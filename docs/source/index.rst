@@ -6,18 +6,25 @@
 Software development guide
 ==========================
 
+Introduction
+------------
+Software development is an essential part of research. This documentation provides guides for researchers to understand the key aspects of software development. Guides are provided for different levels of experience.
+
+Contributors
+------------
+
+- Thiranja Prasad Babarenda Gamage
+
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
 
-   contributors
-   introduction
    beginner
    intermediate
    advanced
 
 Indices and tables
-==================
+------------------
 
 * :ref:`genindex`
 * :ref:`modindex`
