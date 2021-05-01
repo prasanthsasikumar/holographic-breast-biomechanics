@@ -23,6 +23,7 @@ Contributors
    beginner
    intermediate
    advanced
+   contributing_guides
 
 Indices and tables
 ------------------
