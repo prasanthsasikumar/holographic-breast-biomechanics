@@ -14,16 +14,16 @@ Contributors
 ------------
 
 - Thiranja Prasad Babarenda Gamage
+- Chinchien Lin
 
 .. toctree::
    :maxdepth: 2
-   :numbered:
    :caption: Contents:
 
    beginner
    intermediate
    advanced
-   contributing_guides
+   contributing
 
 Indices and tables
 ------------------

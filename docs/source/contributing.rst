@@ -1,6 +1,6 @@
-===================
-Contributing guides
-===================
+============
+Contributing
+============
 
 References
 ----------
@@ -22,3 +22,4 @@ For example:
   }
 
 .. bibliography:: refs.bib
+  :style: alpha
