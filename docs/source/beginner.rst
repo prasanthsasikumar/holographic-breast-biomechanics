@@ -1,6 +1,6 @@
-===============
-Beginner guides
-===============
+==================
+Beginner tutorials
+==================
 
 .. toctree::
    :maxdepth: 2
