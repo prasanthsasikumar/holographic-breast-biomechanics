@@ -1,9 +1,9 @@
-============
-The terminal
-============
+==================
+The Linux terminal
+==================
 
-Linux terminal
-==============
+Introduction
+============
 We will be interacting with Linux through a command-line interface (also called a terminal or shell). Familiarise yourself with the terminal using the following guides:
 
 - `Ubuntu.com guide <https://ubuntu.com/tutorials/command-line-for-beginners#1-overview>`_
@@ -17,7 +17,7 @@ We will be interacting with Linux through a command-line interface (also called 
   Terminals can autocomplete text, so you only need to type a few letters and press tab to autocomplete. If there are multiple options press tab twice to see the options. You can also use autocomplete with the ipython terminal.
 
 Commonly used commands
-----------------------
+======================
 .. list-table:: Terminal commands
    :widths: 30, 70
    :header-rows: 1
@@ -42,7 +42,7 @@ Commonly used commands
      - print contents of a text file to screen
 
 Environmental variables
------------------------
+=======================
 In linux, environmental variables are used to store global variables.
 
 .. list-table:: Environmental variable examples
@@ -74,8 +74,8 @@ Environmental variables can be set using the bash `export` command:
 
    export PATH=/hpc/hpat721/usr/pycharm/pycharm-community-2019.3.3/bin/:$PATH
 
-Adding program locations to your PATH Environmental variable
-------------------------------------------------------------
+Adding program locations to your PATH environmental variable
+============================================================
 You can add the directory where you have installed a program to your path so that you do not have type in the full path to the program to execute it. This can be achieved by adding the directory containing your program to the `$PATH` environmental variable.
 
 For a Bash shell, you can set environment variables as shown e.g.
@@ -97,8 +97,7 @@ or you can append values to an existing environment variable e.g.
    export PATH=”$PATH:/my/new/path/”
 
 Editing terminal start up scripts
----------------------------------
-
+=================================
 Each time a terminal is opened, a startup shell script is automatically run. You can store custom terminal commands in this startup shell script e.g. you could add directories which contain your programs to the PATH environment variable (described in the previous section) so that you can just run the program by typing its name in the terminal and not have to type in the full path.
 
 The Bash shell startup script  is located in the `~/.bashrc` text file.
@@ -117,7 +116,7 @@ After editing the file, save and exit. The updated path will then be available w
    source ~/.bashrc
 
 Identifying running processes
------------------------------
+=============================
 Use the `top` command to list the running programs (also known as a process). Each running process has an associated process id (PID).
 
 .. image:: terminal/top.png
@@ -140,7 +139,7 @@ If you know the name of a running command/process, you can directly search for i
 Where the `search_term` could be for example `pycharm.sh`. The process id is shown in the first column.
 
 Killing processes
------------------
+=================
 You can kill a process manually using the following command:
 
 .. code-block:: bash

@@ -12,6 +12,7 @@ Learning python
 ---------------
 Here are a few tools/resources that can help you learn the python programming language:
 
+- `Real Python tutorials <https://realpython.com/start-here/>`_
 - `Pycharm Edu <https://www.jetbrains.com/pycharm-edu/>`_ includes interactive tutorials on how to program with python.
 - `CodeCombat <https://codecombat.com>`_ helps you learn coding with python while playing a real game (sign up as a student. Select ‘individual account’ when prompted).
 
@@ -38,11 +39,9 @@ Matlab
 ======
 
 .. warning::
-   We do not recommend the use of Matlab for creating new code (closed-source/limited toolbox licenses etc, collaborators need to have licenses, uses proprietary export formats e.g. .mat which is built around existing standard formats hdf5, making collaboration/transfer of data between codes difficult etc).
+   Consider using Open-source programming languages such as python as an alternative to closed-source services that may have limited toolbox licenses, require collaborators to have licenses etc
 
-   We recommend open-source programming languages such as python (you can load .mat files with a range of libraries such as readmat is recommended).
-
-   The following guides are provided for helping maintain legacy codes.
+   The following guides are listed for helping maintain legacy codes.
 
 Matlab style guide
 ------------------
