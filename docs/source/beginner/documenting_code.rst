@@ -76,7 +76,7 @@ reStructuredText on the other hand has more built-in features for writing more c
 
 Documentation generation tools
 ==============================
-Rather than having to manually open reStructuredText or Markdown text files individually, we can use a documentation generation tools to help us organise and render our documentation in HTML or PDF format.
+Rather than having to manually open reStructuredText or Markdown text files individually, we can use a documentation generation tool to help us organise and render our documentation in HTML or PDF format.
 
 `Sphinx <https://docs.readthedocs.io/en/stable/intro/getting-started-with-sphinx.html>`_ is a powerful documentation generation tool that uses the `Docutils python library <http://docutils.sourceforge.net/>`_ for processing documentation mark up language files. It has many features for writing technical documentation including:
 
