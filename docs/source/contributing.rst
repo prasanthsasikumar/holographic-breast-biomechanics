@@ -1,6 +1,8 @@
-============
-Contributing
-============
+==================
+Contributing (TBC)
+==================
+
+This section describes how to contribute to these tutorials.
 
 References
 ----------
