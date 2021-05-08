@@ -1,6 +1,6 @@
-===================================
-Integrated development environments
-===================================
+=============================================
+Setting up your development environment (TBC)
+=============================================
 
 Directory setup
 ===============
@@ -16,8 +16,16 @@ Directory setup
 Python
 ======
 
+Command line
+------------
+
 PyCharm
 -------
+
+Autosave
+Settings -> Appearance & Behavior -> System Setttings -> Synchronization- Check Save files automatically if application is idle for 5 sec.
+Settings -> Editor -> General -> Editor tabs- Mark modified (*)
+
 PyCharm has inbuilt PEP8 style checking. Selecting code and clicking the “Code->Reformat code” Pycharm menu option will automatically format your code according to PEP8.
 
 Jupyter Lab
@@ -26,4 +34,5 @@ Jupyter Lab
 Visual studio code
 ------------------
 
-
+Container-based development environments
+========================================

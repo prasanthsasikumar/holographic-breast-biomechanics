@@ -1,6 +1,6 @@
-===================================================
-Interacting with google sheets and drive via python
-===================================================
+==========================================================
+Interacting with google sheets and google drive via python
+==========================================================
 
 The google python API can be used to read, write data to google sheets and google drive. For example, processed data can be sent to a google sheet e.g. for summarising data for collaborators and clinicians.
 
