@@ -8,12 +8,17 @@ Software development guide
 
 Introduction
 ------------
-Software development is an essential part of research. This documentation provides guides for researchers to understand the key aspects of software development. Guides are provided for different levels of experience.
+This documentation provides tutorials for understanding the key aspects of software development. Tutorials are provided for different levels of experience.
+
+Why are these tutorials needed?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+There are many tutorials available on the web for understanding software development, however, they typically only consider specific aspects of software development. More general tutorials are often lengthy and cover more detail than required for student developers who are under time constraints (e.g. Masters and PhD students). Our philosophy is to provide curated links to existing documentation, with gaps filled in as required.
 
 Contributors
 ------------
 
 - Thiranja Prasad Babarenda Gamage
+- Chinchien Lin
 
 .. toctree::
    :maxdepth: 2
@@ -22,6 +27,7 @@ Contributors
    beginner
    intermediate
    advanced
+   contributing
 
 Indices and tables
 ------------------
