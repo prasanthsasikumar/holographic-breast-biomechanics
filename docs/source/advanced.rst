@@ -1,6 +1,6 @@
-=====================
-Advanced guides (TBC)
-=====================
+========================
+Advanced tutorials (TBC)
+========================
 
 design patterns (programmers)
 

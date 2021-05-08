@@ -1,6 +1,6 @@
-===================
-Intermediate guides
-===================
+======================
+Intermediate tutorials
+======================
 
 .. toctree::
    :maxdepth: 2
