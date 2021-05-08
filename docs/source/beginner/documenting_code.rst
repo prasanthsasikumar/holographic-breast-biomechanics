@@ -98,7 +98,6 @@ Getting started with Sphinx
 ---------------------------
 .. toctree::
    :maxdepth: 3
-   :numbered: 2
 
    documenting_code/sphinx
 
@@ -107,7 +106,6 @@ reStructuredText with Sphinx FAQ
 
 .. toctree::
    :maxdepth: 3
-   :numbered: 2
 
    documenting_code/rest
 
@@ -116,7 +114,6 @@ Markdown with Sphinx FAQ
 
 .. toctree::
    :maxdepth: 3
-   :numbered: 2
 
    documenting_code/markdown
 
@@ -132,7 +129,6 @@ The following guides show how to host your Sphinx documentation on ReadTheDocs.o
 
 .. toctree::
    :maxdepth: 3
-   :numbered: 2
 
    documenting_code/readthedocs
 
@@ -204,7 +200,7 @@ You can directly edit existing documentation online, for example on github. This
 .. note::
    This step assumes that either you own the main code repository, or you have already notified the developers of the repository you are creating the pull request to. Otherwise it will look very 'random'. In the case where you have not discussed the changes you are proposing  with the developers of the main repository, it is best practice to first discuss with them. This can be achieved by creating an `issue` on the main github repository for the code project you are interested in. You can highlight the issue you are having, or indicate what you want to contribute. When you commit changes, you can then mention the issue number to highlight the progress you have made to addressing the issue. These will get automatically collated on the issue page on github, and will be available for code reviewers to see when you create your pull request.
 
-For additional information see the following `link <https://docs.typo3.org/m/typo3/docs-how-to-document/master/en-us/WritingDocsOfficial/GithubMethod.html#docs-contribute-github-method>`_.
+For additional information see the following `outline <https://docs.typo3.org/m/typo3/docs-how-to-document/master/en-us/WritingDocsOfficial/GithubMethod.html#docs-contribute-github-method>`_.
 
 Updating documentation locally
 ------------------------------
