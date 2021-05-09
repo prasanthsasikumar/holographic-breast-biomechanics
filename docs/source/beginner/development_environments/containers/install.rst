@@ -9,7 +9,7 @@ Before we install the development-environment, we will first create a set of fol
 .. code-block:: bash
 
   development-environment
-  └───opt
+  └───work
   |       bashrc
   |
   └───usr
@@ -40,7 +40,7 @@ Before we install the development-environment, we will first create a set of fol
 
 This folder structure contains:
 
-1. `opt` - this will be your main working directory.
+1. `work` - this will be your main working directory.
 2. `usr/bin` - folder containing scripts for running different programs in the container e.g. jupyter servers etc.
 3. `usr/etc/jupyter` - folder containing jupyter notebook configuration.
 4. `usr/local` and `usr/cache` - folders where new python modules installed will be stored.
@@ -48,9 +48,9 @@ This folder structure contains:
 
 .. warning::
 
-  The working development-environment/opt directory created on the host machine will be mapped to `/home/jovyan/opt` within the Docker container. Only items within folders that are mapped from the host operating system to the container will persist once the container is shutdown. Any files outside these folders will not be recoverable (running a Docker container can be thought of as getting a new computer with a fresh installation - only items in the mapped drive will be available the next time you start the Docker container).
+  The working development-environment/work directory created on the host machine will be mapped to `/home/jovyan/work` within the Docker container. Only items within folders that are mapped from the host operating system to the container will persist once the container is shutdown. Any files outside these folders will not be recoverable (running a Docker container can be thought of as getting a new computer with a fresh installation - only items in the mapped drive will be available the next time you start the Docker container).
 
-This folder structure and its associated files have been stored in the following zip file ([zip file](../../_static/development-environment.zip)). Simply extract the folder as described below:
+This folder structure and its associated files have been stored in the following zip file (See :download:`zip file <../../../_static/development-environment.zip>`). Simply extract the folder as described below:
 
 Linux and Mac
 ~~~~~~~~~~~~~
