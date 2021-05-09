@@ -9,7 +9,7 @@ Beginner tutorials
 
    beginner/terminal
    beginner/programming_languages
-   beginner/setting_up_development_environment
+   beginner/development_environments
    beginner/managing_source_code
    beginner/documenting_code
    beginner/testing_code
