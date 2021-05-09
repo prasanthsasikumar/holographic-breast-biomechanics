@@ -120,7 +120,7 @@ Navigate to https://colab.research.google.com to get started. See the `Colab FAQ
 
 Binder
 ------
- The`Binder Project <https://mybinder.org/>`_ allow you to package and share interactive, reproducible environments. A Binder or "Binder-ready repository" is a code repository that contains both code and content to run, and configuration files for the environment needed to run it.
+The `Binder Project <https://mybinder.org/>`_ allow you to package and share interactive, reproducible environments. A Binder or "Binder-ready repository" is a code repository that contains both code and content to run, and configuration files for the environment needed to run it.
 
 This allows you to take a code repository e.g .on Github that may contain Jupyter notebooks, and open those notebooks in an executable environment, making your code immediately reproducible by anyone, anywhere.
 
