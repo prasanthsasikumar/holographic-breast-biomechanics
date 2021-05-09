@@ -1,10 +1,6 @@
-======================
-Locally installed IDEs
-======================
-
-Command line + text editor
-==========================
-The most basic IDE is the combination of a text editor (allowing you to edit your source code) and a command line (allowing you to execute commands to build and run your source code).
+Command line terminal + text editor
+===================================
+The most basic IDE is the combination of a text editor (allowing you to edit your source code) and a command line terminal (allowing you to execute commands to build and run your source code).
 
 .. note::
    It is recommend to use a IDE for software development as they provide tools such as graphical debuggers to help improve efficiency of the software development process.
@@ -12,7 +8,7 @@ The most basic IDE is the combination of a text editor (allowing you to edit you
 Common editors include Gedit, Vim on Linux, Text editor on Mac, and Notepad++ on Windows.
 
 .. note::
-   It is recommend to an editor such as Notepad++ that allows you to choose text file line-ending deliminators on Windows. See the following resource for more information (`Converting from Windows-style to UNIX-style line endings <https://support.nesi.org.nz/hc/en-gb/articles/218032857-Converting-from-Windows-style-to-UNIX-style-line-endings>`_).
+   It is recommend to use an editor such as Notepad++ that allows you to choose text file line-ending deliminators on Windows. See the following resource for more information (`Converting from Windows-style to UNIX-style line endings <https://support.nesi.org.nz/hc/en-gb/articles/218032857-Converting-from-Windows-style-to-UNIX-style-line-endings>`_).
 
 PyCharm
 =======
@@ -30,8 +26,8 @@ See the `PyCharm documentation <https://www.jetbrains.com/help/pycharm/quick-sta
 .. note::
    Check the `JetBrains Academic Licensing page <https://www.jetbrains.com/community/education/#students>`_ to see if you qualify for a free educational license. This will provide free access to the Professional edition of PyCharm.
 
-Tips
-----
+PyCharm tips
+------------
 - PyCharm has inbuilt PEP8 style checking. Selecting the code of interest and clicking the |br|:guilabel:`Code` → :guilabel:`Reformat code` Pycharm menu option will automatically format your code according to PEP8.
 
 - Enable automatic saving of open files:
@@ -65,6 +61,44 @@ JupyterLab is a web-based interactive development environment for Jupyter notebo
     JupyterLab IDE.
 
 See the `JupyterLab documentation <https://jupyterlab.readthedocs.io/en/latest/>`_ for installation instructions and how to get started.
+
+JupyterLab tips
+---------------
+
+- `JupyterLab tips and tricks <https://towardsdatascience.com/jupyter-notebooks-tips-and-tricks-4e995e7b1fd0>`_.
+
+Google Colab
+============
+`Google Colaboratory <https://colab.research.google.com/>`_ or “Colab” for short is a **free** Python Jupyter notebook environment from Google Research that runs entirely in the cloud. There is no setup process. The notebooks that you create can be simultaneously edited by you and your collaborators — similar to how you can collaboratively edit documents in Google Docs. It is especially well suited to machine learning, data analysis and education and **provides free access to computing resources including GPUs (Nvidia K80s, T4s, P4s and P100s)**.
+
+  .. figure:: google_colab_ide.png
+    :width: 700
+    :align: center
+    :figclass: align-center
+
+    Google Colab IDE.
+
+Navigate to https://colab.research.google.com to get started. See the `Colab FAQ <https://research.google.com/colaboratory/faq.html>`_ for more information on usage limits of the free GPUs provided by this service.
+
+.. note::
+   If your team requires you to use in-house software as part of your projects then it may not be possible to access and build that software on cloud-based IDEs.
+
+Binder
+======
+The `Binder Project <https://mybinder.org/>`_ allow you to package and share interactive, reproducible environments. A Binder or "Binder-ready repository" is a code repository that contains both code and content to run, and configuration files for the environment needed to run it.
+
+This allows you to take a code repository e.g .on Github that may contain Jupyter notebooks, and open those notebooks in an executable environment, making your code immediately reproducible by anyone, anywhere.
+
+  .. figure:: mybinder.png
+    :width: 700
+    :align: center
+    :figclass: align-center
+
+    Binder setup page.
+
+Binderhub
+---------
+A BinderHub lets you launch a publicly executable version of a Binder repository. Given a URL to a repository, it generates a new URL that anyone can visit in a browser to interact with a running version of the code in that repository.
 
 .. Add line breaks.
 
