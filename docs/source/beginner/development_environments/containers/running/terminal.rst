@@ -33,12 +33,12 @@ Linux and Mac
         --rm \
         --name development-environment \
         -it \
-        -v ~/development-environment/opt:/home/jovyan/opt \
+        -v ~/development-environment/work:/home/jovyan/work \
         -v ~/development-environment/usr/local:/home/jovyan/.local \
         -v ~/development-environment/usr/cache:/home/jovyan/.cache \
         -v ~/development-environment/usr/etc/jupyter:/etc/jupyter \
         -v ~/development-environment/usr/bin/:/usr/local/bin \
-        researchdevresources/development-environment:1.0-minimal-ssh start-terminal.sh
+        researchdevresources/development-environment:1.0-tensorflow-notebook start-terminal.sh
 
   .. important::
 
@@ -52,16 +52,16 @@ Windows
 
   .. code-block:: bash
 
-    docker run `
-        --rm `
-        --name development-environment `
-        -it `
-        -v c/Users/${env:UserName}/Documents/development-environment/opt:/home/jovyan/opt `
-        -v c/Users/${env:UserName}/Documents/development-environment/usr/local:/home/jovyan/.local `
-        -v c/Users/${env:UserName}/Documents/development-environment/usr/cache:/home/jovyan/.cache `
-        -v c/Users/${env:UserName}/Documents/development-environment/usr/etc/jupyter:/etc/jupyter `
-        -v c/Users/${env:UserName}/Documents/development-environment/usr/bin/:/usr/local/bin/ `
-        researchdevresources/development-environment:1.0 start-terminal.sh
+docker run `
+    --rm `
+    --name development-environment `
+    -it `
+    -v c/Users/${env:UserName}/Documents/development-environment/work:/home/jovyan/work `
+    -v c/Users/${env:UserName}/Documents/development-environment/usr/local:/home/jovyan/.local `
+    -v c/Users/${env:UserName}/Documents/development-environment/usr/cache:/home/jovyan/.cache `
+    -v c/Users/${env:UserName}/Documents/development-environment/usr/etc/jupyter:/etc/jupyter `
+    -v c/Users/${env:UserName}/Documents/development-environment/usr/bin/:/usr/local/bin/ `
+    researchdevresources/development-environment:1.0-tensorflow-notebook start.sh
 
   .. important::
     Ensure that there are no trailing spaces following the end-of-line tilda deliminators.
@@ -93,17 +93,17 @@ In this terminal, either:
 
   .. note::
 
-    As your ``opt`` folder on your host operating system is mapped to ``/home/jovyan/opt`` within the container, you can place python scripts in this folder and run them from within the container.
+    As your ``work`` folder on your host operating system is mapped to ``/home/jovyan/work`` within the container, you can place python scripts in this folder and run them from within the container.
 
     .. code-block:: bash
 
-      python /home/jovyan/opt/your_python_script.py
+      python /home/jovyan/work/your_python_script.py
 
     or
 
     .. code-block:: bash
 
-      cd /home/jovyan/opt
+      cd /home/jovyan/work
       python your_python_script.py
 
 Docker run commandline arguments (optional information)
@@ -113,7 +113,7 @@ The commandline arguments associated with the ``docker run`` command are listed 
 
 - ``--name development-environment`` This argument specifies the name of the container that the ``docker run`` command will create.
 - ``-it`` Run the docker container in an interactive mode. This will allow us to open a terminal within the development-environment container to perform some additional setup steps.
-- ``-v [host-src]:[container-dest]`` Allows a folder, ``[host-src]``, on the host operating system (such as our environment folder described in the previous step, to be mounted within the container in the location specified by ``[container-dest]``. For example,  e.g. ``-v ~/development-environment/opt:/home/jovyan/work`` will mount a folder located at ``~/development-environment/opt`` on the host operating system to ``/home/jovyan/work`` in the container).
+- ``-v [host-src]:[container-dest]`` Allows a folder, ``[host-src]``, on the host operating system (such as our environment folder described in the previous step, to be mounted within the container in the location specified by ``[container-dest]``. For example,  e.g. ``-v ~/development-environment/work:/home/jovyan/work`` will mount a folder located at ``~/development-environment/work`` on the host operating system to ``/home/jovyan/work`` in the container).
 - The final argument that the ``docker run`` command requires is the name of the script to run within the the container when it starts up. The OpenCMISS-Docker image has been automatically configured to access scripts located in the ``development-environment/usr/bin`` folder folder without needing to specify their full path.
 - The second to last argument of the ``docker run`` command indicates the location of the Docker image that you want to run e.g. ``researchdevresources/development-environment:1.0`` points to a image hosted on DockerHub.
 

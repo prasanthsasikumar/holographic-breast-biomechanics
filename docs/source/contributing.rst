@@ -23,5 +23,13 @@ For example:
     year = {1987}
   }
 
+Building and publishing Docker images to DockerHub
+--------------------------------------------------
+1. cd research-software-development-tutorials/docs/source/dockerfiles/developer-environment
+2. docker build --tag development-environment:1.0-tensorflow-notebook .
+3. docker tag development-environment:1.0-tensorflow-notebook researchdevresources/development-environment:1.0-tensorflow-notebook
+4. docker login
+5. docker push researchdevresources/development-environment:1.0-tensorflow-notebook
+
 .. bibliography:: refs.bib
   :style: alpha

@@ -42,23 +42,23 @@ Linux or Mac with Docker
         -v ~/development-environment/usr/local:/home/jovyan/.local \
         -v ~/development-environment/usr/cache:/home/jovyan/.cache \
         -v ~/development-environment/usr/bin/:/usr/local/bin \
-        researchdevresources/development-environment:1.0 start-vs-code.sh
+        researchdevresources/development-environment:1.0-tensorflow-notebook start-vs-code.sh
 
   If running on Mac, run the following:
 
   .. code-block:: bash
 
     docker run \
-         --rm \
-         --name development-environment \
-         -e DISPLAY=$IP:0 \
-         -v /tmp/.X11-unix:/tmp/.X11-unix \
-         -v ~/development-environment/opt:/home/jovyan/work \
-         -v ~/development-environment/usr/local:/home/jovyan/.local \
-         -v ~/development-environment/usr/cache:/home/jovyan/.cache \
-         -v ~/development-environment/usr/config:/home/jovyan/.config \
-         -v ~/development-environment/usr/bin/:/usr/local/bin \
-         researchdevresources/development-environment:1.0 start-vs-code.sh
+        --rm \
+        --name development-environment \
+        -e DISPLAY=$IP:0 \
+        -v /tmp/.X11-unix:/tmp/.X11-unix \
+        -v ~/development-environment/opt:/home/jovyan/work \
+        -v ~/development-environment/usr/local:/home/jovyan/.local \
+        -v ~/development-environment/usr/cache:/home/jovyan/.cache \
+        -v ~/development-environment/usr/config:/home/jovyan/.config \
+        -v ~/development-environment/usr/bin/:/usr/local/bin \
+        researchdevresources/development-environment:1.0-tensorflow-notebook start-vs-code.sh
 
   .. important::
 

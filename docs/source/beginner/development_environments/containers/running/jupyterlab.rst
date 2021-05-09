@@ -35,12 +35,12 @@ Linux or Mac with Docker
         --name development-environment \
         -p 10000:8888 \
         -e JUPYTER_ENABLE_LAB=yes \
-        -v ~/development-environment/opt:/home/jovyan/opt \
+        -v ~/development-environment/work:/home/jovyan/work \
         -v ~/development-environment/usr/local:/home/jovyan/.local \
         -v ~/development-environment/usr/cache:/home/jovyan/.cache \
         -v ~/development-environment/usr/etc/jupyter:/etc/jupyter \
         -v ~/development-environment/usr/bin/:/usr/local/bin \
-        researchdevresources/development-environment:1.0 jupyterlab
+        researchdevresources/development-environment:1.0-tensorflow-notebook
 
   .. important::
 
@@ -55,12 +55,12 @@ Repeat steps 1-3 above and then run the following:
 .. code-block:: bash
 
   SINGULARITY_JUPYTER_ENABLE_LAB=yes singularity run \
-      -B ~/development-environment/opt:/home/jovyan/opt \
+      -B ~/development-environment/work:/home/jovyan/work \
       -B ~/development-environment/usr/local:/home/jovyan/.local \
       -B ~/development-environment/usr/cache:/home/jovyan/.cache \
       -B ~/development-environment/usr/etc/jupyter:/etc/jupyter \
       -B ~/development-environment/usr/bin/:/usr/local/bin \
-      docker://researchdevresources/development-environment:1.0 jupyterlab
+      docker://researchdevresources/development-environment:1.0-tensorflow-notebook
 
 .. important::
 
@@ -77,12 +77,12 @@ Run the following command in a PowerShell (don't use a standard terminal, as it 
       --name development-environment `
       -p 10000:8888 `
       -e JUPYTER_ENABLE_LAB=yes `
-      -v c/Users/${env:UserName}/Documents/development-environment/opt:/home/jovyan/opt `
+      -v c/Users/${env:UserName}/Documents/development-environment/work:/home/jovyan/work `
       -v c/Users/${env:UserName}/Documents/development-environment/usr/local:/home/jovyan/.local `
       -v c/Users/${env:UserName}/Documents/development-environment/usr/cache:/home/jovyan/.cache `
       -v c/Users/${env:UserName}/Documents/development-environment/usr/etc/jupyter:/etc/jupyter `
       -v c/Users/${env:UserName}/Documents/development-environment/usr/bin/:/usr/local/bin/ `
-      researchdevresources/development-environment:1.0 start-jupyterlab.sh
+      researchdevresources/development-environment:1.0-tensorflow-notebook
 
 .. important::
   Ensure that there are no trailing spaces following the end-of-line tilda deliminators.

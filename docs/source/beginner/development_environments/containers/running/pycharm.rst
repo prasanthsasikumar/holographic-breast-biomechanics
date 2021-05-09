@@ -6,7 +6,7 @@ The following instructions describe how to run the PyCharm IDE using Docker or S
 Starting the container
 ----------------------
 
-When the commands below are executed, PyCharm will automatically be downloaded and installed in the ``~/opt/PyCharm`` folder, which is a folder on the host machine that is mounted within the Docker container. This means that PyCharm will only need to be installed once and all settings will persist even after the Docker container is shutdown/restarted. The specific version of PyCharm that is downloaded can be specified in the ``development-environment/usr/bin/start-pycharm.sh`` script. By default, PyCharm 2020.2.3 is installed.
+When the commands below are executed, PyCharm will automatically be downloaded and installed in the ``~/work/PyCharm`` folder, which is a folder on the host machine that is mounted within the Docker container. This means that PyCharm will only need to be installed once and all settings will persist even after the Docker container is shutdown/restarted. The specific version of PyCharm that is downloaded can be specified in the ``development-environment/usr/bin/start-pycharm.sh`` script. By default, PyCharm 2020.2.3 is installed.
 
 .. important::
 
@@ -38,30 +38,30 @@ Linux or Mac with Docker
         --name development-environment \
         -e DISPLAY=${DISPLAY} \
         -v /tmp/.X11-unix:/tmp/.X11-unix \
-        -v ~/development-environment/opt:/home/jovyan/work \
+        -v ~/development-environment/work:/home/jovyan/work \
         -v ~/development-environment/usr/local:/home/jovyan/.local \
         -v ~/development-environment/usr/cache:/home/jovyan/.cache \
         -v ~/development-environment/usr/config:/home/jovyan/.config \
         -v ~/development-environment/usr/java:/home/jovyan/.java \
         -v ~/development-environment/usr/bin/:/usr/local/bin \
-        researchdevresources/development-environment:1.0 start-pycharm.sh
+        researchdevresources/development-environment:1.0-tensorflow-notebook start-pycharm.sh
 
   If running on Mac, run the following:
 
   .. code-block:: bash
 
     docker run \
-         --rm \
-         --name development-environment \
-         -e DISPLAY=$IP:0 \
-         -v /tmp/.X11-unix:/tmp/.X11-unix \
-         -v ~/development-environment/opt:/home/jovyan/work \
-         -v ~/development-environment/usr/local:/home/jovyan/.local \
-         -v ~/development-environment/usr/cache:/home/jovyan/.cache \
-         -v ~/development-environment/usr/config:/home/jovyan/.config \
-         -v ~/development-environment/usr/java:/home/jovyan/.java \
-         -v ~/development-environment/usr/bin/:/usr/local/bin \
-         researchdevresources/development-environment:1.0 start-pycharm.sh
+        --rm \
+        --name development-environment \
+        -e DISPLAY=$IP:0 \
+        -v /tmp/.X11-unix:/tmp/.X11-unix \
+        -v ~/development-environment/work:/home/jovyan/work \
+        -v ~/development-environment/usr/local:/home/jovyan/.local \
+        -v ~/development-environment/usr/cache:/home/jovyan/.cache \
+        -v ~/development-environment/usr/config:/home/jovyan/.config \
+        -v ~/development-environment/usr/java:/home/jovyan/.java \
+        -v ~/development-environment/usr/bin/:/usr/local/bin \
+        researchdevresources/development-environment:1.0-tensorflow-notebook start-pycharm.sh
 
   .. important::
 
@@ -85,13 +85,13 @@ Windows with Docker
         --env DISPLAY=${env:IPAddress}:0.0 `
         --name development-environment `
         -it `
-        -v c/Users/${env:UserName}/Documents/development-environment/opt:/home/jovyan/work `
+        -v c/Users/${env:UserName}/Documents/development-environment/work:/home/jovyan/work `
         -v c/Users/${env:UserName}/Documents/development-environment/usr/local:/home/jovyan/.local `
         -v c/Users/${env:UserName}/Documents/development-environment/usr/cache:/home/jovyan/.cache `
         -v c/Users/${env:UserName}/Documents/development-environment/usr/config:/home/jovyan/.config `
         -v c/Users/${env:UserName}/Documents/development-environment/usr/java:/home/jovyan/.java `
         -v c/Users/${env:UserName}/Documents/development-environment/usr/bin/:/usr/local/bin/ `
-        researchdevresources/development-environment:1.0 start-pycharm.sh
+        researchdevresources/development-environment:1.0-tensorflow-notebook start-pycharm.sh
 
   .. important::
     Ensure that there are no trailing spaces following the end-of-line tilda deliminators.
@@ -101,7 +101,7 @@ Configuring PyCharm
 -------------------
 On the first run, you will need to configuring your python environment. 
 
-1. Create a new project folder and store it in the ``/home/jovyan/opt/`` folder.
+1. Create a new project folder and store it in the ``/home/jovyan/work/`` folder.
 
 2. In the interpreter section, select the existing system interpreter option and add the following path to the python interpreter:
 
