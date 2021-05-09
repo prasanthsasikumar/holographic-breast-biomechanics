@@ -100,7 +100,8 @@ Editing terminal start up scripts
 =================================
 Each time a terminal is opened, a startup shell script is automatically run. You can store custom terminal commands in this startup shell script e.g. you could add directories which contain your programs to the PATH environment variable (described in the previous section) so that you can just run the program by typing its name in the terminal and not have to type in the full path.
 
-The Bash shell startup script  is located in the `~/.bashrc` text file.
+The Bash shell startup script  is located in the ``~/.bashrc`` text file. For more information on bashrc files, see the following `bashrc guide <https://support.nesi.org.nz/hc/en-gb/articles/360001194536-What-are-my-bashrc-bash-profile-for->`_.
+
 To edit the script, use the following command to start a text editor e.g. gedit
 
 .. code-block:: bash

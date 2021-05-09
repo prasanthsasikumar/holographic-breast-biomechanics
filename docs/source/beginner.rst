@@ -4,7 +4,7 @@ Beginner tutorials
 
 .. toctree::
    :maxdepth: 2
-   :numbered: 3
+   :numbered: 2
    :caption: Contents:
 
    beginner/terminal

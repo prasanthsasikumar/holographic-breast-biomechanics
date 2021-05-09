@@ -17,7 +17,7 @@
 
 # -- Project information -----------------------------------------------------
 
-project = 'Software development tutorials'
+project = 'Research software development tutorials'
 copyright = '2021, Auckland Bioengineering Institute'
 author = 'Auckland Bioengineering Institute'
 
@@ -64,12 +64,6 @@ html_static_path = ['_static']
 # Set the root rst to load. This is required to be named contents to allow
 # readthedocs to host the docs using its default configuration.
 master_doc = 'index'
-
-# Configures Sphinx to read all files with the extensions .md and .rst.
-source_suffix = {
-    '.rst': 'restructuredtext',
-    '.md': 'markdown',
-}
 
 html_context = {
     'css_files': [
