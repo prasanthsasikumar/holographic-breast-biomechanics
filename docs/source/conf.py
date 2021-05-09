@@ -65,12 +65,6 @@ html_static_path = ['_static']
 # readthedocs to host the docs using its default configuration.
 master_doc = 'index'
 
-# Configures Sphinx to read all files with the extensions .md and .rst.
-source_suffix = {
-    '.rst': 'restructuredtext',
-    '.md': 'markdown',
-}
-
 html_context = {
     'css_files': [
         '_static/theme_overrides.css',  # override wide tables in RTD theme
