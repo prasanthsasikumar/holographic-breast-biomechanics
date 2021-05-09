@@ -153,7 +153,7 @@ You can directly edit existing documentation online, for example on github. This
 4. Click on the pencil button as shown in the screenshot below to edit the file.
 
   .. figure:: documenting_code/editing_docs_on_github.png
-    :width: 700
+    :width: 600
     :class: with-shadow
     :figclass: align-center
 
@@ -162,7 +162,7 @@ You can directly edit existing documentation online, for example on github. This
   This will open the editor mode showing the file in markup format.
 
   .. figure:: documenting_code/edit_mode_on_github.png
-    :width: 700
+    :width: 600
     :class: with-shadow
     :align: center
     :figclass: align-center
@@ -173,7 +173,7 @@ You can directly edit existing documentation online, for example on github. This
 6. Preview edits by clicking on the Preview tab.
 
   .. figure:: documenting_code/previewing_doc_edits_on_github.png
-    :width: 700
+    :width: 600
     :class: with-shadow
     :align: center
     :figclass: align-center
@@ -187,7 +187,7 @@ You can directly edit existing documentation online, for example on github. This
   2. Add an optional extended description.
 
   .. figure:: documenting_code/committing_changes_on_github.png
-    :width: 700
+    :width: 600
     :class: with-shadow
     :align: center
     :figclass: align-center
