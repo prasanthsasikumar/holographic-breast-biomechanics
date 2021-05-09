@@ -1,7 +1,7 @@
 ============
 Introduction
 ============
-This documentation provides tutorials for understanding the key aspects of software development. Tutorials are provided for different levels of experience.
+This documentation provides tutorials for understanding the key aspects of software development for researchers. Tutorials are provided for different levels of experience.
 
 Why are these tutorials needed?
 ===============================

@@ -17,7 +17,7 @@
 
 # -- Project information -----------------------------------------------------
 
-project = 'Software development tutorials'
+project = 'Research software development tutorials'
 copyright = '2021, Auckland Bioengineering Institute'
 author = 'Auckland Bioengineering Institute'
 
