@@ -8,11 +8,14 @@ See requirements.txt for python dependencies.
 
 ## Accessing documentation
 
+<<<<<<< HEAD
+The documentation is hosted on Readthedocs.org - https://research-software-development-tutorials.readthedocs.io/
+=======
 The documentation is hosted on Readthedocs - https://research-software-development-tutorials.readthedocs.io/
+>>>>>>> master
 
 ## Building documentation locally
 
-### From the terminal
 1. Clone the repository to your local machine.
 
 2. Navigate to the docs/
@@ -21,8 +24,7 @@ The documentation is hosted on Readthedocs - https://research-software-developme
 
 4. Open the index.html file in `docs/build/` folder
 
-### From Pycharm
-See the following [instructions](https://bioengineering-toolbox.readthedocs.io/en/latest/documentation/sphinx.html#adding-a-sphinx-build-configuration-to-pycharm).
+See the following [instructions](https://research-software-development-tutorials.readthedocs.io/en/latest/beginner/documenting_code/updating_documentation.html#updating-documentation) for more information regarding updating documentation.
 
 ## Contributing to documentation
 
