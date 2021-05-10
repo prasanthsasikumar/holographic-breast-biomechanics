@@ -20,16 +20,18 @@ Avoid putting comments on the same line as the double dots:
 ```
 This is considered bad practice since it may lead to unintended consequences if the comment matches a proper markup construct.
 
-## 2. How to include code?
+## 2. How to display source code in your documentation?
 
-### 2.1. Code blocks
+### 2.1. Explicitly including code
+
+#### 2.1.1. Code blocks
 ```rest
 .. code-block:: language
 
    code
 ```
 
-### 2.2. Inline code block with syntax highlighting
+#### 2.1.2. Inline code block with syntax highlighting
 First define a custom role. e.g.:
 
 ```rest
@@ -43,7 +45,7 @@ This then allows use inline code e.g.
 Here is some awesome bash code :bash:`a = b + c`.
 ```
 
-### 2.3. Forcing syntax highlighting for a code snippet.
+#### 2.1.3. Forcing syntax highlighting for a code snippet.
 e.g. for a partial snippet of json code:
 
 ```rest
@@ -54,6 +56,47 @@ e.g. for a partial snippet of json code:
        "build": "webpack",
        "serve": "webpack-dev-server"
      },
+```
+
+### 2.2 Including existing source code 
+
+You can use the `literalinclude` reST directive to include entire source code files or specific lines of the source code in your documentation without needing to duplicate code. 
+
+```rest
+.. literalinclude:: example.py
+   :language: python
+   :linenos:
+   :lines: 1,3,5-10,20-
+```
+
+The `:linenos:` directive allows you to add line numbers when displaying the documentation.
+
+See this [link](https://www.sphinx-doc.org/en/master/usage/restructuredtext/directives.html?highlight=literalinclude#directive-literalinclude) for more information.
+
+However, referencing specific lines is not best practice since if the source code changes, the line numbers that are referenced in the documentation would typically need to change too.
+
+Another way to reference code is to insert doc strings into the code itself to mark sections that you would like to reference in the documentation .e.g. in `example.py` you can insert the following:
+
+```python
+#!/usr/bin/env python
+
+#DOC-START your_section_name
+print("Hello World")
+#DOC-END your_section_name
+```
+
+In your reST documentation, you can then include the code between `#DOC-START your_section_name` and `#DOC-END your_section_name` (you can rename `your_section_name` to be more meaninful for your code snippet).
+
+```rest
+.. literalinclude:: example.py
+   :language: python
+   :start-after: #DOC-START your_section_name
+   :end-before: #DOC-END your_section_name
+```
+
+This will display the following when rendered: in the documentation:
+```python
+print("Hello World")
 ```
 
 ## [3. How to hyperlink and cross-reference?](https://docs.typo3.org/m/typo3/docs-how-to-document/master/en-us/WritingReST/Hyperlinks.html)
