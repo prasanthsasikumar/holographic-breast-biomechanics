@@ -221,3 +221,56 @@ More info `here <https://github.com/sphinx-doc/sphinx/issues/5047>`_
 ## 10. How to add a bibiliography?
 The sphinx [sphinxcontrib-bibtex](https://sphinxcontrib-bibtex.readthedocs.io/en/latest/quickstart.html) extension can be used to insert citations and a bibliography to your documentation. These work similarly to LaTeX’s thebibliography environment and the `\citet` and `\citep` commands.
 
+## 11. How to programmatically graphs/diagrams?
+GraphViz is an extension that can be used to programmatically add graphs/diagrams to your documentation.
+
+### 11.1. Setup
+1. Add `sphinx.ext.graphviz` to extensions in `conf.py`
+2. Add `graphviz_output_format = "svg"` in `conf.py`
+
+### 11.2. Simple example
+```rest
+.. graphviz::
+
+   digraph Sphinx {
+      "rST text files (.rst)" -> "web pages (.html)";
+      "rST text files (.rst)" -> "man pages (.1)";
+      "rST text files (.rst)" -> "LaTeX files (.tex)";
+      "rST text files (.rst)" -> "web pages (.epub)";
+   }
+```
+This will render as:
+![GraphViz simple example.](./graphviz_simple_example.png)
+
+### 11.3. Complex example
+```rest
+.. graphviz::
+
+   digraph foo {
+      rankdir="BT";
+      graph [fontname="avenir", fontsize=10];
+      node [fontname="avenir", fontsize=10, target="_blank" shape=rectangle, style=filled, fillcolor=darkseagreen2];
+      edge [fontname="avenir", fontsize=10, style=dashed, arrowhead=onormal];
+      Thing [label="SO:Thing", href="https://schema.org/Thing"];
+      CreativeWork [href="https://schema.org/CreativeWork"];
+      Dataset [href="https://schema.org/Dataset"];
+      MediaObject [href="https://schema.org/MediaObject"];
+      DataDownload [href="https://schema.org/DataDownload"];
+      Intangible [href="https://schema.org/Intangible"];
+      PropertyValue [href="https://schema.org/PropertyValue"];
+      Place [href="https://schema.org/Place", target="_blank"];
+      Person [href="https://schema.org/Person", target="_blank"];
+      Organization [href="https://schema.org/Organization"];
+
+      CreativeWork -> Thing;
+      Intangible -> Thing;
+      Place -> Thing;
+      Person -> Thing;
+      Organization -> Thing;
+      Dataset -> CreativeWork;
+      MediaObject -> CreativeWork;
+      DataDownload -> MediaObject;
+      PropertyValue -> Intangible;
+   }
+```
+See source for this example [here](https://github.com/datadavev/sotools/blob/master/docsource/source/index.rst).
