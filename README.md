@@ -8,7 +8,11 @@ See requirements.txt for python dependencies.
 
 ## Accessing documentation
 
+<<<<<<< HEAD
 The documentation is hosted on Readthedocs.org - https://research-software-development-tutorials.readthedocs.io/
+=======
+The documentation is hosted on Readthedocs - https://research-software-development-tutorials.readthedocs.io/
+>>>>>>> master
 
 ## Building documentation locally
 
