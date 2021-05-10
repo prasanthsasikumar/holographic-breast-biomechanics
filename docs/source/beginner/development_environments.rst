@@ -18,12 +18,6 @@ Using IDEs in containers
 .. important::
   As part of best practices in software development, it is important that your software environment is replicable. To achieve this, it is recommended to run your IDE within a container or a online-based IDE.
 
-  We have setup a container-based development environment to help researchers develop software for their projects. This development environment includes commonly used IDEs including PyCharm, Visual Studio Code, and JupyterLab and can be run on Linux, Mac, or Windows. This provides a replicable sandboxed environment for you to develop your software.
+  We have setup a container-based development environment (called a software development container) to help researchers develop software for their projects. This development environment includes commonly used IDEs including PyCharm, Visual Studio Code, and JupyterLab and can be run on Linux, Mac, or Windows. This provides a replicable sandboxed environment for you to develop your software.
 
-  The instructions for running these IDEs within a container are provided in the link below.
-
-.. toctree::
-   :maxdepth: 3
-
-   development_environments/containers
-
+  The instructions for running these IDEs within a container can be found in the `software development container documentation <https://dev-container.readthedocs.io/en/latest/introduction.html>`_.
