@@ -1,5 +1,6 @@
 Updating documentation
 ======================
+
 Once you have created the documentation, there are a number of ways to allow others to update it.
 
 .. note::

@@ -1,5 +1,5 @@
 Updating documentation online
-=============================
+-----------------------------
 You can directly edit existing documentation online, for example on github. This approach allows you to contribute changes using only a web browser.
 
 1. Navigate to the repository of interest.
