@@ -1,5 +1,6 @@
 Hosting documentation
 =====================
+
 Now that you have created documentation, there are a number of ways that you can share it with others. The most common way is to host the html version of your documentation on a web server. There are a number of services that allow you to host your code depending on whether it is open-source or closed source.
 
 Open-source documentation
