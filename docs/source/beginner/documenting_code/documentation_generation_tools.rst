@@ -26,5 +26,5 @@ To find out about the differences between reST, docutils, readthedocs, sphinx, a
 References
 ----------
 
-.. bibliography:: ../refs.bib
+.. bibliography:: ../../refs.bib
   :style: alpha
