@@ -8,3 +8,4 @@ Intermediate tutorials
    :caption: Contents:
 
    intermediate/google_api
+   intermediate/documenting_source_code_with_doxygen

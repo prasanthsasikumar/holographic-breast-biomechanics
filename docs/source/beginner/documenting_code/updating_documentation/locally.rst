@@ -3,6 +3,8 @@ Updating documentation locally using an IDE
 Alternatively, you can create a local copy of the project on your computer (forking and cloning the code). You can then edit the source code as desired using your IDE of choice (e.g. PyCharm). You can then follow the best practice guidelines to commit and contribute your code into the project's main repository through a pull request.
 
 
+.. _Setting up Sphinx in PyCharm:
+
 Updating documentation with PyCharm
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 This section describes how to add a sphinx build configuration to PyCharm:

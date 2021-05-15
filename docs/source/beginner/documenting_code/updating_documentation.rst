@@ -11,7 +11,6 @@ Once you have created the documentation, there are a number of ways to allow oth
 
 .. toctree::
    :maxdepth: 1
-   :numbered: 2
    :caption: Contents:
 
    updating_documentation/online
