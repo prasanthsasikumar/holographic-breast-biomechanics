@@ -1,6 +1,6 @@
-================
-Documenting code
-================
+=============================
+Documenting software projects
+=============================
 
 The objectives of this tutorial are to familiarise yourself with:
 
@@ -24,5 +24,6 @@ The objectives of this tutorial are to familiarise yourself with:
    documenting_code/creating_new_documentation
    documenting_code/hosting_documentation
    documenting_code/updating_documentation
+   documenting_code/source_code
 
 
