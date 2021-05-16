@@ -10,11 +10,21 @@ We will be interacting with Linux through a command-line interface (also called 
 - `Linux journey guide <https://linuxjourney.com/lesson/the-shell>`_
 - `Bash guide by astrobiomike <https://astrobiomike.github.io/bash/>`_
 
-.. tip::
-   On linux, you can perform a quick copy paste by selecting any text (e.g. in a terminal, text editors etc), then middle click to directly paste without needing to use the keyboard.
+Tips
+====
 
-.. tip::
-  Terminals can autocomplete text, so you only need to type a few letters and press tab to autocomplete. If there are multiple options press tab twice to see the options. You can also use autocomplete with the ipython terminal.
+1. On linux, you can perform a quick copy paste by selecting any text (e.g. in a terminal, text editors etc), then middle click to directly paste without needing to use the keyboard.
+
+2. Terminals can autocomplete text, so you only need to type a few letters and press tab to autocomplete. If there are multiple options press tab twice to see the options. You can also use autocomplete with the ipython terminal.
+
+3. Use https://explainshell.com to explain the command line arguments of a specified linux command.
+
+.. figure:: terminal/explain_shell.png
+  :width: 700
+  :align: center
+  :figclass: align-center
+
+  Explanation of command line arguments for the ``ls -lrt`` terminal command.
 
 Commonly used commands
 ======================
@@ -120,8 +130,12 @@ Identifying running processes
 =============================
 Use the `top` command to list the running programs (also known as a process). Each running process has an associated process id (PID).
 
-.. image:: terminal/top.png
-   :width: 600
+.. figure:: terminal/top.png
+  :width: 600
+  :align: center
+  :figclass: align-center
+
+  Output of ``top`` command.
 
 Press the :kbd:`c` button to see the full path to the program. To quit the `top` process viewer, press the :kbd:`q` button.
 
