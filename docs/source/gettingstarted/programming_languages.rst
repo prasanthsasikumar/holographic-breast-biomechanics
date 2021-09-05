@@ -4,6 +4,16 @@ Programming languages
 
 This section describes commonly used programming languages used in research projects.
 
+C#
+==
+C# is a general-purpose, multi-paradigm programming language. C# encompasses static typing, strong typing, lexically scoped, imperative, declarative, functional, generic, object-oriented, and component-oriented programming disciplines.
+
+Learning C#
+-----------
+Here are a few tools/resources that can help you learn the C# programming language:
+- `Microsoft tutorials <https://dotnet.microsoft.com/learn/csharp>`_
+- `W3 Schools tutorials <https://www.w3schools.com/cs/index.php>`_
+
 Python
 ======
 The python programming language is recommended for research projects.
@@ -34,16 +44,3 @@ Useful commands
    :numbered: 0
 
    python/useful_commands
-
-Matlab
-======
-
-.. warning::
-   Consider using Open-source programming languages such as python as an alternative to closed-source services that may have limited toolbox licenses, require collaborators to have licenses etc
-
-   The following guides are listed for helping maintain legacy codes.
-
-Matlab style guide
-------------------
-In the event that you need to contribute to existing matlab code. Please use the following `style guide <https://au.mathworks.com/matlabcentral/fileexchange/46056-matlab-style-guidelines-2-0>`_.
-

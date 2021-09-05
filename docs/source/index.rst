@@ -3,7 +3,7 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Research software development tutorials
+Holographic breast biomechanics development tutorials
 =======================================
 
 .. toctree::
@@ -11,10 +11,7 @@ Research software development tutorials
    :caption: Contents:
 
    introduction
-   beginner
-   intermediate
-   advanced
-   contributing
+   gettingstarted
 
 Indices and tables
 ------------------

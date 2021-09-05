@@ -17,7 +17,7 @@
 
 # -- Project information -----------------------------------------------------
 
-project = 'Research software development tutorials'
+project = 'Holographic breast biomechanics development tutorials'
 copyright = '2021, Auckland Bioengineering Institute'
 author = 'Auckland Bioengineering Institute'
 
