@@ -1,4 +1,4 @@
-# Hologracphic Breast Biomechanics Documentation
+# Holographic Breast Biomechanics Documentation
 
 See the documentation for more information.
 
