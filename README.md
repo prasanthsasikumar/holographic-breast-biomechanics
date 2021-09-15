@@ -1,4 +1,4 @@
-# Research software development tutorials
+# Hologracphic Breast Biomechanics Documentation
 
 See the documentation for more information.
 
@@ -8,7 +8,7 @@ See requirements.txt for python dependencies.
 
 ## Accessing documentation
 
-The documentation is hosted on Readthedocs.org - https://research-software-development-tutorials.readthedocs.io/
+The documentation is hosted on Readthedocs.org - https://holographic-breast-biomechanics.readthedocs.io/
 
 ## Building documentation locally
 
