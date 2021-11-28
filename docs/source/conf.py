@@ -1,3 +1,4 @@
+import sphinx_rtd_theme
 # Configuration file for the Sphinx documentation builder.
 #
 # This file only contains a selection of the most common options. For a full
@@ -31,7 +32,8 @@ extensions = [
     'nbsphinx_link',
     'recommonmark',
     'sphinx.ext.autosectionlabel',
-    'sphinxcontrib.bibtex'
+    'sphinxcontrib.bibtex',
+    'sphinx_rtd_theme'
 ]
 bibtex_bibfiles = ['refs.bib']
 bibtex_default_style = 'unsrt'
