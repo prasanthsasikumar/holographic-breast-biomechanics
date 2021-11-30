@@ -8,7 +8,7 @@ See requirements.txt for python dependencies.
 
 ## Accessing documentation
 
-The documentation is hosted on Readthedocs.org - https://holographic-breast-biomechanics.readthedocs.io/
+The documentation is hosted on Readthedocs.org - https://holographic-breast-biomechanics-visualizer.readthedocs.io/
 
 ## Building documentation locally
 
