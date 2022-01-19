@@ -12,6 +12,8 @@ The objectives of this tutorial are to familiarise yourself with:
 
 - manging version control of local code repositories from Gitkraken (GUI) and the command line.
 
+- Unity Collab
+
 Introduction
 ============
 Version control is the practice of tracking and managing changes to software code (similar to tracking changes in a Microsoft Word document). Version control software keeps track of every modification to the code in a special kind of database. If a mistake is made, developers can turn back the clock and compare earlier versions of the code to help fix the mistake while minimizing disruption to all team members :cite:`atlassian_what_is_version_control`.
@@ -37,6 +39,11 @@ The following is an ordered list of tutorials to help you understand how to use 
 Educational accounts for Github and Gitkraken
 =============================================
 If applicable, you can signup for an educational account (students and teachers) on https://education.github.com/. This will also provide you access to a `Gitkraken pro account <https://www.gitkraken.com/github-student-developer-pack>`_ allowing you to use this tool for managing version control of closed-source repositories (the free version only allows use with open-source repositories - see their terms and conditions for more information).
+
+Unity collaborate
+=================
+Collaborate features makes it easy for teams to save, share, and sync their Unity projects with others, regardless of location. It’s cloud enabled and built directly into Unity.
+Learn more about Unity Collab here: <https://unity.com/unity/features/collaborate>
 
 References
 ==========

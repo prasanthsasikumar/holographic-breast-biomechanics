@@ -11,4 +11,3 @@ Getting Started
    gettingstarted/programming_languages
    gettingstarted/managing_source_code
    gettingstarted/documenting_code
-   gettingstarted/best_practices

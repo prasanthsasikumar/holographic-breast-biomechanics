@@ -14,6 +14,8 @@ Here are a few tools/resources that can help you learn the C# programming langua
 - `Microsoft tutorials <https://dotnet.microsoft.com/learn/csharp>`_
 - `W3 Schools tutorials <https://www.w3schools.com/cs/index.php>`_
 
+Here is a great video tutorial series - https://www.youtube.com/playlist?list=PLdo4fOcmZ0oVxKLQCHpiUWun7vlJJvUiN
+
 Python
 ======
 The python programming language is recommended for research projects.

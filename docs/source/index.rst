@@ -12,6 +12,7 @@ Holographic breast biomechanics development tutorials
 
    introduction
    gettingstarted
+   sampleApplication
 
 Indices and tables
 ------------------
