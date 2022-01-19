@@ -8,3 +8,4 @@ Sample Unity Hololens Application
    :caption: Contents:
 
    sampleApplication/newUnityProject
+   sampleApplication/HoloCube

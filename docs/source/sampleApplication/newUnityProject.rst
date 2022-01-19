@@ -13,12 +13,14 @@ Afterwards, you can go through my other very short article on How to build your 
   :align: center
   :figclass: align-center
 
+
 If you do not have a HL2 then you use either HL 2 emulator (which I have not explained here) or use Unity to simulate this (as in Figure 2).
 
 .. figure:: figure2.gif
   :width: 700
   :align: center
   :figclass: align-center
+
 
 Prerequisites
 -------------
@@ -43,12 +45,14 @@ First, you need to open Unity Hub and create a new project. Make sure to select 
   :align: center
   :figclass: align-center
 
+
 The first thing you have to do is changing the build setting. Go to File -> Build Settings… (Or press Ctrl+Shift+B). A window will pop up and select the Universal Windows Platform and select the Target device as HoloLens and Architecture as ARM64. (Refer to Figure  below)
 
   .. figure:: figure4.png
     :width: 700
     :align: center
     :figclass: align-center
+
 
 Then, click on the Switch Platform button and close the popup window. Next, go to Edit -> Project settings… You will be presented with another window as in Figure below. On the left-hand side of the window select Player.
 
@@ -57,12 +61,14 @@ Then, click on the Switch Platform button and close the popup window. Next, go t
   :align: center
   :figclass: align-center
 
+
 Expand XR Plugin Management and tick Open XR. Once you tick this you will see a ‘+’ mark appear. Click on it and select Windows Mixed Reality feature group as shown in Figure below.
 
 .. figure:: fig6.png
   :width: 700
   :align: center
   :figclass: align-center
+
 
 
 Before closing the Project settings there is one more setting to tick. Collapse Player Settings and expand Publishing Settings. Go to Universal windows Platform tab. Scroll down until you find Capabilities list and tick SpacialPerception, Webcam, Microphone and Internet Client. This allows the visualization of the spatial mapping mesh on Windows Mixed Reality devices. See Figure below to find the screen capture with the described setting. After this, close the Project Settings window.
@@ -80,6 +86,7 @@ While Unity completes the import, download Microsoft.MixedReality.Toolkit.Unity.
   :align: center
   :figclass: align-center
 
+
 Then, select the Microsoft.MixedReality.Toolkit.Unity.Foundation.2.7.3.unitypackage. Again click All and then the Import buttons. Refer figure below.
 
 .. figure:: fig10.png
@@ -87,12 +94,14 @@ Then, select the Microsoft.MixedReality.Toolkit.Unity.Foundation.2.7.3.unitypack
   :align: center
   :figclass: align-center
 
+
 Let Unity install all the necessary packages. This might take a while. Maybe a few minutes depending on your computer’s specifications. Once Unity finishes all the imports you will get an MRTK popup window as in Figure below. Click on the Apply button.
 
 .. figure:: fig11.png
   :width: 700
   :align: center
   :figclass: align-center
+
 
 If you did not get a popup window as in Figure above, go to Mixed Reality Toolkit -> Utilities -> Configure Unity Project. This will provide the same window.
 Now repeat the sets in Figure 11 to install Microsoft.MixedReality.Toolkit.Unity.Tools.2.7.3.unitypackage. This is optional but I find this helpful; you can eliminate this step if you choose. Go to Assets -> Import Packages -> Custom Packages and then select the download package (Microsoft.MixedReality.Toolkit.Unity.Tools.2.7.7.unitypackage) and click All and the Import buttons. Refer to Figure 18 below.
